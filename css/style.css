@@ -1,5 +1,36 @@
 @import url(config_global.css);
+@import url(nav.css);
 
 body {
     font-family: var(font-primary);
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.button {
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    /* max-width: 500px;
+    max-height: ; */
+}
+
+.button-login {
+    font-size: 16px;
+    border: 2px solid var(--cor-tertiary);
+    padding: 7px 40px;
+}
+
+.margin_x-25px {
+    margin: 25px 0px;
+}
+
+.margin_y-25px {
+    margin: 0px 25px;
 }
