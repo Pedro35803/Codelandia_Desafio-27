@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor-primary: #DA2535;
+    --cor-secundary: #616161;
+    --cor-tertiary: #292929;
+    --cor-quartetary: #F3F3F3;
+    --cor-quintetary: #FBFBFB;
+
+    --font-primary: 'Inter', sans-serif;
+    --font-secundary: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}

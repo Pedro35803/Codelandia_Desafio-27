@@ -1,0 +1,5 @@
+@import url(config_global.css);
+
+body {
+    font-family: var(font-primary);
+}
