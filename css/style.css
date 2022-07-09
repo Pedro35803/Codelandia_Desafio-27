@@ -42,8 +42,16 @@ body {
 
 /* Imagens */
 
-.img-suhsi {
+.img {
+    height: 100%;
+}
+
+.img-sushi {
     height: 400px;
+}
+
+.img-resept {
+    height: 350px;
 }
 
 /* Botoẽs */
@@ -88,4 +96,14 @@ body {
 
 .margin_l-25px {
     margin-left: 25px;
+}
+
+/* Links */
+
+.link {
+    color: var(--cor-primary);
+    font-size: 18px;
+    text-decoration: none;
+    padding-bottom: 1px; 
+    border-bottom: 1px solid var(--cor-primary);
 }
