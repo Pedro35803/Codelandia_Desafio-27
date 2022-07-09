@@ -23,21 +23,53 @@ body {
     justify-content: space-between;
 }
 
+/* Cards */
+
+.card {
+    background-color: var(--cor-quartetary);
+    border-radius: 32px
+}
+
+.card-ramem {
+    width: 285px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Texto */
 
 .container-text {
     width: 325px;
 }
 
+.text-centralized {
+    text-align: center;
+}
+
 .title {
     color: var(--cor-tertiary);
     font-family: var(--font-secundary);
+    font-weight: 600;
     font-size: 35px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .paragraph {
     font-size: 18px;
     color: var(--cor-tertiary);
+}
+
+.paragraph-ramem {
+    font-size: 15px;
+    width: 175px;
 }
 
 /* Imagens */
@@ -52,6 +84,12 @@ body {
 
 .img-resept {
     height: 350px;
+}
+
+.img-ramem {
+    position: static;
+    height: 200px;
+    top: 10;
 }
 
 /* Botoẽs */
@@ -90,12 +128,20 @@ body {
     margin: 25px 0px;
 }
 
+.margin_x-50px {
+    margin: 75px 0px;
+}
+
 .margin_y-25px {
     margin: 0px 25px;
 }
 
 .margin_l-25px {
     margin-left: 25px;
+}
+
+.margin_b-25px {
+    margin-bottom: 25px;
 }
 
 /* Links */
