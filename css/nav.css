@@ -2,6 +2,8 @@
     background-color: white;
     height: 70px;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .container-nav {
@@ -51,11 +53,6 @@
 }
 
 @media (max-width: 650px) {
-    .nav {
-        position: fixed;
-        top: 0;
-    }
-
     .menu {
         background-color: var(--cor-quintetary);
         box-shadow: -3px 0px 11px 13px rgba(0, 0, 0, 0.4);
