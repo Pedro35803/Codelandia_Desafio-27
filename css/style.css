@@ -27,16 +27,19 @@ body {
 
 .card {
     background-color: var(--cor-quartetary);
-    border-radius: 32px
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-ramem {
     width: 285px;
     height: 400px;
 
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
+}
+
+.card-ramem-text {
     align-items: center;
 }
 
@@ -64,30 +67,41 @@ body {
 
 .paragraph {
     font-size: 18px;
+    line-height: 1.5em;
     color: var(--cor-tertiary);
 }
 
 .paragraph-ramem {
+    color: var(--cor-secundary);
     font-size: 15px;
-    width: 175px;
+    width: 200px;
+}
+
+.paragraph-cost {
+    font-family: var(--font-secundary);
+    font-size: 22px;
+    font-weight: 500;
 }
 
 /* Imagens */
 
 .img {
     height: 100%;
+    width: auto;
 }
 
 .img-sushi {
-    height: 400px;
+    min-height: 200px;
+    max-height: 400px;
 }
 
 .img-resept {
-    height: 350px;
+    min-height: 200px;
+    max-height: 350px;
 }
 
 .img-ramem {
-    position: static;
+    position: relative;
     height: 200px;
     top: 10;
 }
@@ -124,6 +138,10 @@ body {
 
 /* Margin */
 
+.margin_x-15px {
+    margin: 15px 0px;
+}
+
 .margin_x-25px {
     margin: 25px 0px;
 }
@@ -142,6 +160,10 @@ body {
 
 .margin_b-25px {
     margin-bottom: 25px;
+}
+
+.margin_b-20px {
+    margin-bottom: 20px;
 }
 
 /* Links */
