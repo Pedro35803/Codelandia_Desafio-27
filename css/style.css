@@ -23,6 +23,11 @@ body {
     justify-content: space-between;
 }
 
+.container-populares {
+    position: relative;
+    padding-top: 80px;
+}
+
 /* Cards */
 
 .card {
@@ -34,9 +39,9 @@ body {
 
 .card-ramem {
     width: 285px;
-    height: 400px;
+    height: 325px;
 
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .card-ramem-text {
@@ -101,9 +106,13 @@ body {
 }
 
 .img-ramem {
-    position: relative;
     height: 200px;
-    top: 10;
+    margin-left: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 /* Botoẽs */
@@ -156,6 +165,10 @@ body {
 
 .margin_l-25px {
     margin-left: 25px;
+}
+
+.margin_b-50px {
+    margin-bottom: 50px;
 }
 
 .margin_b-25px {
