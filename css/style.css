@@ -2,7 +2,7 @@
 @import url(nav.css);
 
 body {
-    font-family: var(font-primary);
+    font-family: var(--font-primary);
 }
 
 .start {
@@ -40,7 +40,6 @@ body {
 .card-ramem {
     width: 285px;
     height: 325px;
-
     justify-content: flex-end;
 }
 
@@ -48,10 +47,18 @@ body {
     align-items: center;
 }
 
+.card-profile {
+    height: 225px;
+    width: 375px;
+    padding: 25px;
+    border-radius: 16px;
+    align-items: flex-start;
+}
+
 /* Texto */
 
 .container-text {
-    width: 325px;
+    width: 375px;
 }
 
 .text-centralized {
@@ -72,13 +79,14 @@ body {
 
 .paragraph {
     font-size: 18px;
+    font-weight: 400;
     line-height: 1.5em;
     color: var(--cor-tertiary);
 }
 
 .paragraph-ramem {
     color: var(--cor-secundary);
-    font-size: 15px;
+    font-size: 14px;
     width: 200px;
 }
 
@@ -86,6 +94,12 @@ body {
     font-family: var(--font-secundary);
     font-size: 22px;
     font-weight: 500;
+}
+
+.paragraph-comment {
+    font-size: 16px;
+    font-family: var(--font-secundary);
+    width: 300px;
 }
 
 /* Imagens */
@@ -107,12 +121,21 @@ body {
 
 .img-ramem {
     height: 200px;
+    z-index: 0;
     margin-left: 15%;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+}
+
+.img-profile {
+    height: 75px;
+}
+
+.img-star {
+    width: 15px;
 }
 
 /* Botoẽs */

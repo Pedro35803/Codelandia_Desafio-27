@@ -2,6 +2,7 @@
     background-color: white;
     height: 70px;
     width: 100%;
+    z-index: 1;
     position: fixed;
     top: 0;
 }
@@ -13,6 +14,7 @@
 
 .logo {
     height: 25px;
+    cursor: pointer;
 }
 
 .menu {
