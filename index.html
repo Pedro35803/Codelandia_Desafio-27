@@ -108,11 +108,11 @@
             </section>
         </article>
 
-        <main>
+        <section>
             <h1 class="title text-centralized margin_b-50px">Comentários</h1>
 
-            <section class="container container-start">
-                <main class="card card-profile">
+            <div class="container container-start">
+                <section class="card card-profile">
                     <img class="img-profile" src="img/profile_01.svg">
                     
                     <h2 class="title subtitle margin_x-15px">Daniele Almeida</h2>
@@ -128,9 +128,9 @@
                         <img class="img-star" src="img/star.svg">
                         <img class="img-star" src="img/star.svg">
                     </section>
-                </main>
+                </section>
 
-                <main class="card card-profile">
+                <section class="card card-profile">
                     <img class="img-profile" src="img/profile_02.svg">
                     
                     <h2 class="title subtitle margin_x-15px">Ricardo França</h2>
@@ -146,23 +146,28 @@
                         <img class="img-star" src="img/star.svg">
                         <img class="img-star" src="img/star.svg">
                     </section>
-                </main>
-            </section>
-        </main>
+                </section>
+            </div>
+        </section>
 
-        <main>
-            <main>
+        <section>
+            <div>
                 <h1 class="margin_x-50px">Localização</h1>
-                <img src="img/map.jpg">
+
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/map-small.jpg">
+                    <img src="img/map.jpg">
+                </picture>
+
                 <section>
                     <input type="text" placeholder="Localização para entrega">
                     <button>Buscar</button>
                 </section>
-            </main>
-        </main>
+            </div>
+        </section>
 
         <footer>
-            <main>
+            <section>
                 <img src="img/logo.svg" alt="FoodJP">
 
                 <article>
@@ -183,7 +188,7 @@
                     <p>Entrega</p>
                     <p>Retirada</p>
                 </article>
-            </main>
+            </section>
         </footer>
     </main>
 </body>
