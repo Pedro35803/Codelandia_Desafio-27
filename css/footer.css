@@ -18,11 +18,17 @@
     color: var(--cor-secundary);
     text-decoration: none;
     font-size: 15px;
-    transition: 0.5s ease;
 }
 
 .footer-links:hover {
+    transition: 0.5s ease;
     color: var(--cor-primary);
+    font-weight: bold;
+}
+
+.footer-links_contant:hover {
+    color: var(--cor-secundary);
+    font-weight: normal;
 }
 
 .footer-logo {

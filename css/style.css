@@ -11,9 +11,14 @@ body {
     height: 500px;
 }
 
-.populares {
+.ramem {
     position: relative;
     padding-top: 80px;
+    transition: 0.25s ease-in;
+}
+
+.ramem:hover {
+    transform: scale(1.075);
 }
 
 .flex {
@@ -68,6 +73,15 @@ body {
     padding: 25px;
     border-radius: 16px;
     align-items: flex-start;
+    transition: 0.25s ease;
+}
+
+.card-profile:hover {
+    transform: scale(1.05);
+}
+
+.section-stars {
+    cursor: alias;
 }
 
 /* Texto */
@@ -140,19 +154,35 @@ body {
     height: 200px;
     z-index: 0;
     margin-left: 15%;
+
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    transform: 0% 0%;
+}
+
+.img-ramem:hover {
+    transition: 1.75s ease;
+    transform: rotate(45deg);
 }
 
 .img-profile {
     height: 75px;
 }
 
+.img-profile:hover {
+    filter: grayscale(0.6);
+}
+
 .img-star {
     width: 15px;
+}
+
+.img-star:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
 }
 
 .img-location {
@@ -163,6 +193,11 @@ body {
     border: 1px solid var(--cor-tertiary);
     border-right: 0px;
     border-radius: 10px 0px 0px 10px;
+    transition: 0.25s ease;
+}
+
+.img-map:hover {
+    transform: scale(1.025);
 }
 
 /* Botoẽs */
@@ -182,12 +217,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.25s ease;
 }
 
 .button-primary {
     background-color: var(--cor-primary);
     color: var(--cor-quintetary);
     border: none;
+}
+
+.button-primary:hover {
+    background-color: var(--cor-secundary);
 }
 
 .button-address {
@@ -199,6 +239,10 @@ body {
 .button-login {
     border: 2px solid var(--cor-tertiary);
     padding: 7px 40px;
+}
+
+.button-login:hover {
+    transform: scale(1.2);
 }
 
 /* Margin */
@@ -248,9 +292,12 @@ body {
 .link {
     color: var(--cor-primary);
     font-size: 18px;
-    text-decoration: none;
-    padding-bottom: 1px; 
-    border-bottom: 1px solid var(--cor-primary);
+    transition: 0.25s ease;
+}
+
+.link:hover {
+    color: var(--cor-secundary);
+    font-weight: bold;
 }
 
 .input {

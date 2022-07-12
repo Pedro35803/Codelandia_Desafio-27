@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.logo:hover {
+    filter: brightness(1.5);
+}
+
 .menu {
     width: 70%;
 }
@@ -35,10 +39,11 @@
     color: var(--cor-tertiary);
     text-decoration: none;
     font-size: 18px;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
 
 .menu-links:hover {
+    font-weight: bold;
     color: var(--cor-primary);
 }
 

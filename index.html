@@ -37,7 +37,7 @@
             </div>
         </nav>
 
-        <article class="start margin_x-25px">
+        <article class="start margin_x-25px" id="start">
             <div class="container container-start">
                 <span class="container-text">
                     <h1 class="title">Comida Oriental</h1>
@@ -50,7 +50,7 @@
             </div>
         </article>
 
-        <article>
+        <article id="values">
             <div class="container container-start">
                 <img class="img img-resept margin_b-25px" src="img/resept_ikan_fillet.jpg" alt="Um prato de Filé de resept ikan">
                 <span class="container-text margin_b-25px">
@@ -58,16 +58,16 @@
                     <p class="paragraph margin_x-25px">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <a class="link" href="#">Ler mais sobre o modo de preparo</a>
+                    <a class="link" href="#values">Ler mais sobre o modo de preparo</a>
                 </span>
             </div>
         </article>
 
-        <article class="margin_x-40px">
-            <h1 class="title text-centralized margin_b-50px">Mais populares</h1>
+        <article class="margin_x-40px" id="cardapio">
+            <h1 class="title text-centralized margin_b-50px">Mais ramem</h1>
 
             <section class="container container-start">
-                <section class="populares margin_b-25px">
+                <section class="ramem margin_b-25px">
                     <section class="card card-ramem">
                         <img class="img-ramem" src="img/ramem_01.svg" alt="Ramem de Frango">
                         <span class="card card-ramem-text">
@@ -80,7 +80,7 @@
                     </section>
                 </section>
 
-                <section class="populares margin_b-25px">
+                <section class="ramem margin_b-25px">
                     <section class="card card-ramem">
                         <img class="img-ramem" src="img/ramem_02.svg" alt="Ramem Apimentado">
                         <span class="card card-ramem-text">
@@ -93,7 +93,7 @@
                     </section>
                 </section>
 
-                <section class="populares margin_b-25px">
+                <section class="ramem margin_b-25px">
                     <section class="card card-ramem">
                         <img class="img-ramem" src="img/ramem_03.svg" alt="Ramem Tradicional">
                         <span class="card card-ramem-text">
@@ -122,7 +122,7 @@
                             Ótimo serviço! Encantada com a qualidade dos pratos.
                         </p>
                         
-                        <section class="margin_x-15px">
+                        <section class="section-stars margin_x-15px">
                             <img class="img-star" src="img/star.svg">
                             <img class="img-star" src="img/star.svg">
                             <img class="img-star" src="img/star.svg">
@@ -140,7 +140,7 @@
                             Não é apenas a comida excelente, o serviço torna a experiência especial.
                         </p>
 
-                        <section class="margin_x-15px">
+                        <section class="section-stars margin_x-15px">
                             <img class="img-star" src="img/star.svg">
                             <img class="img-star" src="img/star.svg">
                             <img class="img-star" src="img/star.svg">
@@ -152,16 +152,16 @@
             </div>
         </section>
 
-        <section class="margin_b-50px">
+        <section class="margin_b-50px" id="location">
             <div class="container container-column">
                 <h1 class="title">Localização</h1>
 
                 <picture class="margin_x-25px">
                     <source media="(max-width: 600px)" srcset="img/map-small.jpg">
-                    <img class="img" src="img/map.jpg">
+                    <img class="img img-map" src="img/map.jpg">
                 </picture>
 
-                <section class="flex container-centralizado">
+                <section class="flex container-centralizado margin_b-25px">
                     <img class="img-location" src="img/location.svg">
                     <input class="input" type="text" placeholder="Localização para entrega">
                     <button class="button button-primary button-address">Buscar</button>
@@ -176,21 +176,21 @@
                 <section class="flex container-footer-menu">
                     <article class="flex container-column margin_y-25px">
                         <h1 class="subtitle margin_b-25px">Contato</h1>
-                        <a class="footer-links margin_b-15px" href="#">+55 21 9999-9999</a>
-                        <a class="footer-links margin_b-15px" href="#">email@gmail.com</a>
+                        <a class="footer-links footer-links_contant margin_b-15px" href="#start">+55 21 9999-9999</a>
+                        <a class="footer-links footer-links_contant margin_b-15px" href="#start">email@gmail.com</a>
                     </article>
     
                     <article class="flex container-column margin_y-25px">
                         <h1 class="subtitle margin_b-25px">Sobre nós</h1>
-                        <a class="footer-links margin_b-15px" href="#">Menu</a>
-                        <a class="footer-links margin_b-15px" href="#">Valores</a>
-                        <a class="footer-links margin_b-15px" href="#">Pagina Inicial</a>
+                        <a class="footer-links margin_b-15px" href="#cardapio">Menu</a>
+                        <a class="footer-links margin_b-15px" href="#values">Valores</a>
+                        <a class="footer-links margin_b-15px" href="#start">Pagina Inicial</a>
                     </article>
     
                     <article class="flex container-column margin_y-25px">
                         <h1 class="subtitle margin_b-25px">Serviços</h1>
-                        <a class="footer-links margin_b-15px" href="#">Entrega</a>
-                        <a class="footer-links margin_b-15px" href="#">Retirada</a>
+                        <a class="footer-links margin_b-15px" href="#location">Entrega</a>
+                        <a class="footer-links margin_b-15px" href="#location">Retirada</a>
                     </article>
                 </section>
             </section>
