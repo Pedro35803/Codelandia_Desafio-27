@@ -1,5 +1,6 @@
 @import url(config_global.css);
 @import url(nav.css);
+@import url(footer.css);
 
 body {
     font-family: var(--font-primary);
@@ -87,8 +88,10 @@ body {
 }
 
 .subtitle {
-    font-size: 24px;
+    color: var(--cor-tertiary);
+    font-family: var(--font-secundary);
     font-weight: 500;
+    font-size: 24px;
 }
 
 .paragraph {
@@ -154,9 +157,9 @@ body {
 
 .img-location {
     background: var(--cor-quintetary);
-    height: 30px;
-    padding: 10px 0px 10px 10px;
-    
+    height: 22px;
+    padding: 15px 0px 15px 15px;
+
     border: 1px solid var(--cor-tertiary);
     border-right: 0px;
     border-radius: 10px 0px 0px 10px;
@@ -236,6 +239,10 @@ body {
     margin-bottom: 20px;
 }
 
+.margin_b-15px {
+    margin-bottom: 15px;
+}
+
 /* Entradas e Links */
 
 .link {
@@ -248,8 +255,8 @@ body {
 
 .input {
     background: var(--cor-quintetary);
-    width: 300px;
-    padding: 10px;
+    width: 330px;
+    padding: 15px;
     font-size: 18px;
     border: 1px solid var(--cor-tertiary);
     border-left: 0px;
