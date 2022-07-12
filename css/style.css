@@ -1,6 +1,7 @@
 @import url(config_global.css);
-@import url(nav.css);
+@import url(margins.css);
 @import url(footer.css);
+@import url(nav.css);
 
 body {
     font-family: var(--font-primary);
@@ -70,8 +71,10 @@ body {
 .card-profile {
     height: 225px;
     width: 375px;
+
     padding: 25px;
     border-radius: 16px;
+
     align-items: flex-start;
     transition: 0.25s ease;
 }
@@ -86,7 +89,7 @@ body {
 
 /* Texto */
 
-.container-text {
+.section-text {
     width: 375px;
 }
 
@@ -137,7 +140,8 @@ body {
 
 .img {
     height: 100%;
-    width: auto;
+    /* width: 100%; */
+    /* min-width: auto; */
 }
 
 .img-sushi {
@@ -148,6 +152,7 @@ body {
 .img-resept {
     min-height: 200px;
     max-height: 350px;
+    border-radius: 16px;
 }
 
 .img-ramem {
@@ -194,6 +199,10 @@ body {
     border-right: 0px;
     border-radius: 10px 0px 0px 10px;
     transition: 0.25s ease;
+}
+
+.img-map {
+    border-radius: 16px;
 }
 
 .img-map:hover {
@@ -245,49 +254,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Margin */
-
-.margin_x-15px {
-    margin: 15px 0px;
-}
-
-.margin_x-25px {
-    margin: 25px 0px;
-}
-
-.margin_x-40px {
-    margin: 40px 0px;
-}
-
-.margin_x-50px {
-    margin: 75px 0px;
-}
-
-.margin_y-25px {
-    margin: 0px 25px;
-}
-
-.margin_l-25px {
-    margin-left: 25px;
-}
-
-.margin_b-50px {
-    margin-bottom: 50px;
-}
-
-.margin_b-25px {
-    margin-bottom: 25px;
-}
-
-.margin_b-20px {
-    margin-bottom: 20px;
-}
-
-.margin_b-15px {
-    margin-bottom: 15px;
-}
-
-/* Entradas e Links */
+/* Links */
 
 .link {
     color: var(--cor-primary);
@@ -299,6 +266,8 @@ body {
     color: var(--cor-secundary);
     font-weight: bold;
 }
+
+/* Entrada */
 
 .input {
     background: var(--cor-quintetary);
