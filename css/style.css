@@ -152,6 +152,16 @@ body {
     width: 15px;
 }
 
+.img-location {
+    background: var(--cor-quintetary);
+    height: 30px;
+    padding: 10px 0px 10px 10px;
+    
+    border: 1px solid var(--cor-tertiary);
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
 /* Botoẽs */
 
 .button {
@@ -175,6 +185,12 @@ body {
     background-color: var(--cor-primary);
     color: var(--cor-quintetary);
     border: none;
+}
+
+.button-address {
+    max-height: 90px;
+    padding: 10px 40px;
+    border-radius: 0 10px 10px 0;
 }
 
 .button-login {
@@ -220,7 +236,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Links */
+/* Entradas e Links */
 
 .link {
     color: var(--cor-primary);
@@ -228,6 +244,28 @@ body {
     text-decoration: none;
     padding-bottom: 1px; 
     border-bottom: 1px solid var(--cor-primary);
+}
+
+.input {
+    background: var(--cor-quintetary);
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid var(--cor-tertiary);
+    border-left: 0px;
+}
+
+.input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--cor-tertiary);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 0;
+    border-left: 0 none;
+    outline: 0;
 }
 
 /* Responsividade */
