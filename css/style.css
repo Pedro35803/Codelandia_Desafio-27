@@ -10,6 +10,15 @@ body {
     height: 500px;
 }
 
+.populares {
+    position: relative;
+    padding-top: 80px;
+}
+
+.flex {
+    display: flex;
+}
+
 .container {
     display: flex;
     max-width: 900px;
@@ -19,13 +28,18 @@ body {
 }
 
 .container-start {
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.container-populares {
-    position: relative;
-    padding-top: 80px;
+.container-column {
+    flex-direction: column;
+}
+
+.container-centralizado {
+    width: 100%;
+    justify-content: center;
 }
 
 /* Cards */
@@ -178,6 +192,10 @@ body {
     margin: 25px 0px;
 }
 
+.margin_x-40px {
+    margin: 40px 0px;
+}
+
 .margin_x-50px {
     margin: 75px 0px;
 }
@@ -210,4 +228,16 @@ body {
     text-decoration: none;
     padding-bottom: 1px; 
     border-bottom: 1px solid var(--cor-primary);
+}
+
+/* Responsividade */
+
+@media (max-width: 780px) {
+    .img-sushi {
+        display: none;
+    }
+
+    .start {
+        height: 300px;
+    }
 }
