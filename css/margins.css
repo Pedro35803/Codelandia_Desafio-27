@@ -1,3 +1,7 @@
+.margin_auto {
+    margin: auto;
+}
+
 .margin_x-15px {
     margin: 15px 0px;
 }
@@ -42,14 +46,14 @@
     margin: 40px 0px;
 }
 
-.margin_x-50px {
-    margin: 75px 0px;
-}
-
 .margin_b-50px {
     margin-bottom: 50px;
 }
 
-.margin_auto {
-    margin: auto;
+.margin_y-75px {
+    margin: 0px 75px;
+}
+
+.margin_x-75px {
+    margin: 75px 0px;
 }

@@ -4,12 +4,13 @@
     height: 200px;
 }
 
-.container-footer {
+.container-footer, 
+.container-footer-menu {
+    display: flex;
     flex-wrap: wrap;
 }
 
 .container-footer-menu {
-    flex-wrap: wrap;
     margin-left: 25px;
     padding-bottom: 25px;
 }
@@ -26,7 +27,7 @@
     font-weight: bold;
 }
 
-.footer-links_contant:hover {
+.footer-links_contact:hover {
     color: var(--cor-secundary);
     font-weight: normal;
 }

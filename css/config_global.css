@@ -10,6 +10,8 @@
 
     --font-primary: 'Inter', sans-serif;
     --font-secundary: 'Montserrat', sans-serif;
+
+    --temp-animation: 0.25s ease;
 }
 
 * {

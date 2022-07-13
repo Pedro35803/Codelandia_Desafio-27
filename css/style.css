@@ -7,27 +7,28 @@ body {
     font-family: var(--font-primary);
 }
 
-.start {
+#start, #location {
     padding-top: 70px;
     height: 500px;
+}
+
+#location {
+    height: 575px;
+    display: flex;
+    align-items: space-between;
 }
 
 .ramem {
     position: relative;
     padding-top: 80px;
-    transition: 0.25s ease-in;
+    transition: var(--temp-animation);
 }
 
 .ramem:hover {
     transform: scale(1.075);
 }
 
-.flex {
-    display: flex;
-}
-
 .container {
-    display: flex;
     max-width: 900px;
     width: 90%;
     height: 100%;
@@ -35,17 +36,20 @@ body {
 }
 
 .container-start {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 .container-column {
+    display: flex;
     flex-direction: column;
 }
 
 .container-centralizado {
     width: 100%;
+    display: flex;
     justify-content: center;
 }
 
@@ -76,7 +80,7 @@ body {
     border-radius: 16px;
 
     align-items: flex-start;
-    transition: 0.25s ease;
+    transition: var(--temp-animation);
 }
 
 .card-profile:hover {
@@ -97,23 +101,29 @@ body {
     text-align: center;
 }
 
-.title {
+.title, .subtitle {
     color: var(--cor-tertiary);
     font-family: var(--font-secundary);
-    font-weight: 600;
+}
+
+.title {
     font-size: 35px;
+    font-weight: 600;
 }
 
 .subtitle {
-    color: var(--cor-tertiary);
-    font-family: var(--font-secundary);
-    font-weight: 500;
     font-size: 24px;
+    font-weight: 500;
+}
+
+.paragraph,
+.link, .input,
+.input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .paragraph {
-    font-size: 18px;
-    font-weight: 400;
     line-height: 1.5em;
     color: var(--cor-tertiary);
 }
@@ -136,36 +146,68 @@ body {
     width: 300px;
 }
 
+/* Links */
+
+.link {
+    color: var(--cor-primary);
+    transition: var(--temp-animation);
+}
+
+.link:hover {
+    color: var(--cor-secundary);
+    font-weight: bold;
+}
+
+/* Entrada */
+
+.input {
+    background: var(--cor-quintetary);
+    width: 330px;
+    padding: 15px;
+    border: 1px solid var(--cor-tertiary);
+    border-left: 0px;
+}
+
+.input::placeholder {
+    line-height: 1.5em;
+    color: var(--cor-tertiary);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 0;
+    border-left: 0 none;
+    outline: 0;
+}
+
 /* Imagens */
 
 .img {
-    height: 100%;
-    /* width: 100%; */
-    /* min-width: auto; */
+    width: 100%;
 }
 
 .img-sushi {
-    min-height: 200px;
-    max-height: 400px;
+    max-width: 300px;
+}
+
+.img-resept, 
+.img-map {
+    border-radius: 16px;
 }
 
 .img-resept {
-    min-height: 200px;
-    max-height: 350px;
-    border-radius: 16px;
+    max-width: 423px;
 }
 
 .img-ramem {
     height: 200px;
     z-index: 0;
-    margin-left: 15%;
+    margin: 0 auto;
 
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    transform: 0% 0%;
 }
 
 .img-ramem:hover {
@@ -198,11 +240,11 @@ body {
     border: 1px solid var(--cor-tertiary);
     border-right: 0px;
     border-radius: 10px 0px 0px 10px;
-    transition: 0.25s ease;
+    transition: var(--temp-animation);
 }
 
 .img-map {
-    border-radius: 16px;
+    max-width: 900px;
 }
 
 .img-map:hover {
@@ -226,7 +268,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.25s ease;
+    transition: var(--temp-animation);
 }
 
 .button-primary {
@@ -254,51 +296,22 @@ body {
     transform: scale(1.2);
 }
 
-/* Links */
-
-.link {
-    color: var(--cor-primary);
-    font-size: 18px;
-    transition: 0.25s ease;
-}
-
-.link:hover {
-    color: var(--cor-secundary);
-    font-weight: bold;
-}
-
-/* Entrada */
-
-.input {
-    background: var(--cor-quintetary);
-    width: 330px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid var(--cor-tertiary);
-    border-left: 0px;
-}
-
-.input::placeholder {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5em;
-    color: var(--cor-tertiary);
-}
-
-.input:focus {
-    box-shadow: 0 0 0 0;
-    border-left: 0 none;
-    outline: 0;
-}
-
 /* Responsividade */
 
 @media (max-width: 780px) {
+    #start {
+        height: 300px;
+    }
+
     .img-sushi {
         display: none;
     }
+}
 
-    .start {
-        height: 300px;
+@media (max-width: 500px) {
+    .footer-subtitle {
+        font-size: 20px;
+        font-weight: normal;
+        color: var(--cor-secundary);
     }
 }

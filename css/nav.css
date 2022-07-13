@@ -7,11 +7,6 @@
     top: 0;
 }
 
-.container-nav {
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
     height: 25px;
     cursor: pointer;
