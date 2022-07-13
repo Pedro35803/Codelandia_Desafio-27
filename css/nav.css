@@ -34,11 +34,10 @@
     color: var(--cor-tertiary);
     text-decoration: none;
     font-size: 18px;
-    transition: 0.2s ease;
+    transition: var(--temp-animation);
 }
 
 .menu-links:hover {
-    font-weight: bold;
     color: var(--cor-primary);
 }
 

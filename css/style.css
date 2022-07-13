@@ -35,7 +35,8 @@ body {
     margin: auto;
 }
 
-.container-start {
+.container-start,
+.container-nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -244,7 +245,11 @@ body {
 }
 
 .img-map {
+    height: 367px;
+    width: calc(100% - 1%);
     max-width: 900px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .img-map:hover {
@@ -297,6 +302,12 @@ body {
 }
 
 /* Responsividade */
+
+@media (max-width: 1000px) {
+    .container-start {
+        justify-content: space-around;
+    }
+}
 
 @media (max-width: 780px) {
     #start {
