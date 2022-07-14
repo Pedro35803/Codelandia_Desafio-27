@@ -36,9 +36,9 @@ body {
 }
 
 .container-start,
-.container-nav {
+.container-nav,
+.container-card {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -163,6 +163,7 @@ body {
 
 .input {
     background: var(--cor-quintetary);
+    min-width: 100px;
     width: 330px;
     padding: 15px;
     border: 1px solid var(--cor-tertiary);
@@ -195,9 +196,14 @@ body {
     border-radius: 16px;
 }
 
-.img-resept {
+.picture-img-resept {
     max-width: 423px;
     margin: 0px 25px 25px 0px;
+}
+
+.img-resept {
+    float: left;
+    max-width: 423px;
 }
 
 .img-ramem {
@@ -307,14 +313,20 @@ body {
 /* Responsividade */
 
 @media (max-width: 1000px) {
-    .container-start {
+    .container-card {
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 780px) {
     #start {
         height: 300px;
+    }
+
+    .container-start {
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .img-sushi {
@@ -339,8 +351,8 @@ body {
         padding: 10px 175px;
     }
 
-    .img-resept {
-        margin: 0px 0px 25px 0px;
+    .picture-img-resept {
+        margin: 0px 0px 50px 0px;
     }
 
     .card-comment {
