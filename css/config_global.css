@@ -19,3 +19,33 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
+*::selection {
+    background-color: var(--cor-tertiary);
+}
+
+/* Scroll no Chrome, Opera, Edge */
+
+body::-webkit-scrollbar {
+    width: 12.5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor-quartetary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primary);
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--cor-secundary);
+}
+
+/* Scroll no Firefox */
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-primary) var(--cor-secundary);
+}

@@ -135,6 +135,10 @@ body {
     width: 200px;
 }
 
+.paragraph-ramem::selection {
+    background-color: var(--cor-secundary);
+}
+
 .paragraph-cost {
     font-family: var(--font-secundary);
     font-size: 22px;
