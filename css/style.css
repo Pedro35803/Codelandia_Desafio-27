@@ -43,7 +43,8 @@ body {
     justify-content: space-between;
 }
 
-.container-column {
+.container-column, 
+.card, .section-text {
     display: flex;
     flex-direction: column;
 }
@@ -59,21 +60,20 @@ body {
 .card {
     background-color: var(--cor-quartetary);
     border-radius: 32px;
-    display: flex;
-    flex-direction: column;
 }
 
 .card-ramem {
     width: 285px;
-    height: 325px;
+    height: 300px;
     justify-content: flex-end;
+    padding-bottom: 25px;
 }
 
 .card-ramem-text {
     align-items: center;
 }
 
-.card-profile {
+.card-comment {
     height: 225px;
     width: 375px;
 
@@ -84,7 +84,7 @@ body {
     transition: var(--temp-animation);
 }
 
-.card-profile:hover {
+.card-comment:hover {
     transform: scale(1.05);
 }
 
@@ -197,6 +197,7 @@ body {
 
 .img-resept {
     max-width: 423px;
+    margin: 0px 25px 25px 0px;
 }
 
 .img-ramem {
@@ -276,13 +277,15 @@ body {
     transition: var(--temp-animation);
 }
 
-.button-primary {
+.button-start,
+.button-address {
     background-color: var(--cor-primary);
     color: var(--cor-quintetary);
     border: none;
 }
 
-.button-primary:hover {
+.button-start:hover,
+.button-address:hover {
     background-color: var(--cor-secundary);
 }
 
@@ -316,6 +319,32 @@ body {
 
     .img-sushi {
         display: none;
+    }
+
+    .menu {
+        width: 78%;
+    }
+
+    .paragraph,
+    .title {
+        text-align: center;
+    }
+
+    .button-start, 
+    .link {
+        align-self: center;
+    }
+
+    .button-start {
+        padding: 10px 175px;
+    }
+
+    .img-resept {
+        margin: 0px 0px 25px 0px;
+    }
+
+    .card-comment {
+        align-items: center;
     }
 }
 
