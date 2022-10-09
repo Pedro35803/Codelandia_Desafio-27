@@ -5,6 +5,7 @@
 
 body {
     font-family: var(--font-primary);
+    transition: overflow 0.5s ease;
 }
 
 #start, #location {
@@ -335,10 +336,6 @@ body {
 
     .img-sushi {
         display: none;
-    }
-
-    .menu {
-        width: 78%;
     }
 
     .paragraph,

@@ -16,10 +16,6 @@
     filter: brightness(1.5);
 }
 
-.menu {
-    width: 70%;
-}
-
 .menu-link {
     width: 300px;
     list-style: none;
@@ -84,7 +80,7 @@
 
 /* Responsividade */
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .menu {
         background-color: var(--cor-quintetary);
         box-shadow: -3px 0px 11px 13px rgba(0, 0, 0, 0.4);
@@ -93,7 +89,7 @@
         right: 0;
 
         height: 100%;
-        width: 300px;
+        width: 50vw;
 
         position: fixed;
         z-index: 1;
@@ -104,6 +100,7 @@
 
     .menu-link {
         height: 70%;
+        max-height: 500px;
     }
 
     .menu-link, .menu {
