@@ -26,6 +26,10 @@
     justify-content: space-between;
 }
 
+.item-button {
+    display: none;
+}
+
 /* Links */
 
 .menu-links {
@@ -119,5 +123,13 @@
 
     .menu-icon:hover {
         filter: invert(33%) sepia(2%) saturate(68%) hue-rotate(314deg) brightness(83%) contrast(93%);
+    }
+
+    .item-button {
+        display: block;
+    }
+
+    .container-nav > .button-login {
+        display: none;
     }
 }
