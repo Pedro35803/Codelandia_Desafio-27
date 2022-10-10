@@ -133,3 +133,9 @@
         display: none;
     }
 }
+
+@media (max-width: 550px) { 
+    .menu {
+        width: 75vw;
+    }
+}
